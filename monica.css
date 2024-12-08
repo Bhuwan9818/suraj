@@ -70,7 +70,12 @@ a{
 
  
 .clients{
-    background-color: rgb(250, 238, 217)
+    background-color: rgb(250, 238, 218)
+}
+
+.clients1{
+    background-color: rgb(50, 56, 50);
+ 
 }
 
 /* media queary for section 2 heading for different screen  */
