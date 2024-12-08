@@ -1,0 +1,237 @@
+.form-control{
+    background-color: rgb(236, 137, 45);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-link{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1{
+    background-color: rgb(22, 26, 22);
+}
+
+.section2{
+    background-color: rgb(25, 29, 25);
+}
+
+li{
+    opacity: 0.5;
+}
+
+.section3{
+    background-color: rgb(22, 27, 22);
+}
+
+.img2{
+    width: 60%;
+    opacity: 0.5; 
+    height: 300px;   
+    position: absolute;
+    z-index: -1;
+    margin-left: -30%;
+}
+
+body,html{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+a{
+    font-family: Roboto Flex, sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+
+/* media queary for button for different screens section 3 */
+
+@media (min-width:991px )and (max-width:1200px) {
+    .d-flex{
+        margin-top: -30%;
+    }
+}
+
+@media (min-width:767px )and (max-width:991px) {
+    .d-flex{
+        margin-top: 30%;
+    }
+}
+
+@media (max-width:767px) {
+    .d-flex{
+        margin-top: 30%;
+    }
+}
+/* end fo media queary for button  */
+
+ 
+.clients{
+    background-color: rgb(250, 238, 217)
+}
+
+/* media queary for section 2 heading for different screen  */
+
+@media (min-width:991px )and (max-width:1200px) {
+    .font1{
+        font-size: 80%;
+    }
+}
+
+@media (min-width:767px )and (max-width:991px) {
+    .font1{
+        font-size: 50%;
+    }
+}
+
+@media (max-width:767px) {
+    .font1{
+        font-size: 50%;
+        
+    }
+}
+/* media queary for section 2 ends  */
+
+/* media queary for section 2 image start  */
+@media (min-width:767px )and (max-width:991px) {
+    .img3{
+        width: 200px;
+    }
+}
+
+@media (max-width:767px) {
+    .img3{
+        width: 200px;
+    }
+}
+/* media queary for section 2 image ends  */
+
+/* media queary for section 3 heading part start  */
+
+@media (max-width:767px) {
+    .font2{
+        font-size: 50%;
+        
+    }
+}
+/* ends section 3  */
+
+/* media queary for section 4 button  */
+@media(min-width:1400px){
+    .d-flex1{
+        width: 300px;
+    }
+}
+
+@media (min-width:1200px )and (max-width:1400px) {
+    .d-flex1{
+        margin-top: -35%;
+        width: 250px;
+    }
+}
+
+@media (min-width:991px )and (max-width:1199px) {
+    .d-flex1{
+        margin-top: -52%;
+        width: 250px;
+    }
+}
+
+@media (min-width:767px )and (max-width:991px) {
+    .d-flex1{
+        margin-top: 30%;
+    }
+}
+
+@media (max-width:767px) {
+    .d-flex1{
+        margin-top: 30%;
+    }
+}
+/* media queary for section 4 button ends  */
+
+/* media queary for section 5 heading part start  */
+
+@media (max-width:767px) {
+    .font3{
+        font-size: 55%;
+    }
+    .para5{
+        margin-top: -15%;
+    }
+}
+
+@media (min-width:767px )and (max-width:991px) {
+    .para5{
+        margin-top: -12%;
+    }
+}
+/* end of section 5 media queary  */
+
+/* start of section 6  */
+
+/* General container styling */
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+
+/* Styling for individual boxes */
+.box {
+    background-color:rgb(250, 238, 217);
+    border: 1px solid rgb(97, 85, 85);
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 1s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    background-color: rgb(236, 205, 151);;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Typography */
+@media (min-width: 1200px){
+    .container1{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1200px){
+    .container1{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .container1{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .box {
+        font-size: 14px;
+        padding: 16px;
+    }
+    .container1{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        font-size: 12px;
+        padding: 12px;
+    }
+}
