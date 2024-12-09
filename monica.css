@@ -243,3 +243,38 @@ a{
         padding: 12px;
     }
 }
+
+
+.holder{
+    text-align: center;
+    /* background-color: rgb(66, 57, 57); */
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(90deg,rgb(71, 67, 67),rgb(230, 230, 134),rgb(248, 182, 59));
+    transition: box-showdow 0.3s ease-in-out;
+    color: rgb(14, 13, 13);
+
+}
+
+
+/* media for section 9 */
+@media (max-width: 700px){
+    .gy-4{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+/* section 9 media ends  */
+
+/* media for section 8 heading font change for small screen*/
+@media (max-width:500px){
+    .font6{
+        font-size: 80%;
+    }
+}
+
+@media (max-width:991px){
+    .list1{
+        margin-left: -45px;
+    }
+}
