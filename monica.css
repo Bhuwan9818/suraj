@@ -47,6 +47,19 @@ a{
 }
 
 
+/* ::selection{
+    background-color: aqua;
+    color: red;
+}
+
+h1::first-letter{
+    font-size: 6rem;
+}
+
+p::first-line {
+    background-color: rgb(201, 219, 219);
+} */
+
 /* media queary for button for different screens section 3 */
 
 @media (min-width:991px )and (max-width:1200px) {
