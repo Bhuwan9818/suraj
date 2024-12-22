@@ -1,49 +1,165 @@
-.form-control{
+html {
+    scroll-behavior: smooth;
+}
+
+.font2{
+    position: relative;
+    z-index: 2;
+}
+
+.form-control {
     background-color: rgb(236, 137, 45);
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.nav-link{
+.nav-link {
     display: flex;
     justify-content: space-between;
 }
 
-.section1{
+.section1 {
     background-color: rgb(22, 26, 22);
 }
 
-.section2{
+.section2 {
     background-color: rgb(25, 29, 25);
 }
 
-.over{
+.over {
     opacity: 0.5;
 }
 
-.section3{
+.section3 {
     background-color: rgb(22, 27, 22);
+    position: relative;
 }
 
-.img2{
-    width: 60%;
-    opacity: 0.5; 
-    height: 300px;   
+.button5{
+    position: relative;
+    z-index: 5;
+}
+
+.img2 {
+    /* width: 60%; */
+    opacity: 0.3;
+    /* height: 2; */
+    transform: scaleX(0.7) scaleY(0.7);
+    top: -30px;
+    left: -150px;
     position: absolute;
-    z-index: -1;
-    margin-left: -30%;
+    z-index: 0;
+    /* margin-left: -30%; */
 }
 
-body,html{
+body,
+html {
     overflow-x: hidden;
     width: 100%;
 }
 
-a{
+a {
     font-family: Roboto Flex, sans-serif;
     font-weight: bold;
     font-size: xx-large;
+}
+
+.nav-link {
+    transition: 1s;
+    transform-origin: top left;
+}
+
+.nav-link:hover {
+    transform: rotate(15deg);
+}
+
+.glow {
+    transition: 0.5s ease;
+    /* animation: pulse 2s infinite;
+    position: relative;
+    overflow: hidden; */
+}
+
+/* @keyframes pulse {
+    0%,100%{
+        box-shadow: 0 0 10px rgba(30,144,255,0.8);
+    }
+    50%{
+        box-shadow: 0 0 20px rgba(30,144,255,1);
+    }
+} */
+
+/* .glass{
+    background-color: rgba(247, 236, 236, 0.055);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+.glow:hover {
+    background: linear-gradient(rgba(235, 71, 6, 0.705), rgb(196, 250, 3));
+    width: 110%;
+    box-shadow: 0 0 15px 3px rgba(44, 121, 199, 0.479);
+}
+
+/* animation using keyframes  */
+
+.font1 h5 {
+    opacity: 0;
+    animation: scrolldown 1s ease forwards;
+    animation-delay: 0.5s;
+    /* animation-timeline: view(); */
+}
+
+.font1 h1 {
+    opacity: 0;
+    animation: scrollup 1s ease forwards;
+    animation-delay: 1.1s;
+    /* animation-timeline: view(); */
+}
+
+@keyframes scrollup {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scrolldown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* keyframs for img0 */
+
+.img0 {
+    animation: scrollleft 1s ease;
+}
+
+@keyframes scrollleft {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 
@@ -62,134 +178,155 @@ p::first-line {
 
 /* media queary for button for different screens section 3 */
 
-@media (min-width:991px )and (max-width:1200px) {
-    .d-flex{
+@media (min-width:991px)and (max-width:1200px) {
+    .d-flex {
         margin-top: -30%;
     }
 }
 
-@media (min-width:767px )and (max-width:991px) {
-    .d-flex{
+@media (min-width:767px)and (max-width:991px) {
+    .d-flex {
         margin-top: 30%;
     }
 }
 
 @media (max-width:767px) {
-    .d-flex{
+    .d-flex {
         margin-top: 30%;
     }
 }
+
 /* end fo media queary for button  */
 
- 
-.clients{
+
+.clients {
     background-color: rgb(250, 238, 218)
 }
 
-.clients1{
+.clients1 {
     background-color: rgb(50, 56, 50);
- 
+
 }
-.clients2{
+
+.clients2 {
     background-color: rgb(31, 29, 29);
 }
 
 /* media queary for section 2 heading for different screen  */
 
-@media (min-width:991px )and (max-width:1200px) {
-    .font1{
+@media (min-width:991px)and (max-width:1200px) {
+    .font1 {
         font-size: 80%;
     }
 }
 
-@media (min-width:767px )and (max-width:991px) {
-    .font1{
+@media (min-width:767px)and (max-width:991px) {
+    .font1 {
         font-size: 50%;
     }
 }
 
 @media (max-width:767px) {
-    .font1{
+    .font1 {
         font-size: 50%;
-        
+
     }
 }
+
 /* media queary for section 2 ends  */
 
 /* media queary for section 2 image start  */
-@media (min-width:767px )and (max-width:991px) {
-    .img3{
+@media (min-width:767px)and (max-width:991px) {
+    .img3 {
         width: 200px;
     }
 }
 
 @media (max-width:767px) {
-    .img3{
+    .img3 {
         width: 200px;
     }
 }
+
 /* media queary for section 2 image ends  */
 
 /* media queary for section 3 heading part start  */
 
 @media (max-width:767px) {
-    .font2{
-        font-size: 50%;
-        
+    .font2 {
+        font-size: 80%;
+
     }
 }
+@media (max-width: 991px){
+    .img2{
+        transform: scaleY(0.4) scaleX(0.7);
+        top: -120px;
+    }
+}
+
+@media (max-width: 532px){
+    .img2{
+        transform: scaleY(0.5) scaleX(0.7);
+        top: -80px;
+    }
+}
+
 /* ends section 3  */
 
 /* media queary for section 4 button  */
-@media(min-width:1400px){
-    .d-flex1{
+@media(min-width:1400px) {
+    .d-flex1 {
         width: 300px;
     }
 }
 
-@media (min-width:1200px )and (max-width:1400px) {
-    .d-flex1{
+@media (min-width:1200px)and (max-width:1400px) {
+    .d-flex1 {
         margin-top: -35%;
         width: 250px;
     }
 }
 
-@media (min-width:991px )and (max-width:1199px) {
-    .d-flex1{
+@media (min-width:991px)and (max-width:1199px) {
+    .d-flex1 {
         margin-top: -52%;
         width: 250px;
     }
 }
 
-@media (min-width:767px )and (max-width:991px) {
-    .d-flex1{
+@media (min-width:767px)and (max-width:991px) {
+    .d-flex1 {
         margin-top: 30%;
     }
 }
 
 @media (max-width:767px) {
-    .d-flex1{
+    .d-flex1 {
         margin-top: 30%;
     }
 }
+
 /* media queary for section 4 button ends  */
 
 /* media queary for section 5 heading part start  */
 
 @media (max-width:767px) {
-    .font3{
+    .font3 {
         font-size: 55%;
     }
-    .para5{
+
+    .para5 {
         margin-top: -15%;
     }
 }
 
-@media (min-width:767px )and (max-width:991px) {
-    .para5{
+@media (min-width:767px)and (max-width:991px) {
+    .para5 {
         margin-top: -12%;
     }
 }
+
 /* end of section 5 media queary  */
 
 /* start of section 6  */
@@ -204,7 +341,7 @@ p::first-line {
 
 /* Styling for individual boxes */
 .box {
-    background-color:rgb(250, 238, 217);
+    background-color: rgb(250, 238, 217);
     border: 1px solid rgb(97, 85, 85);
     text-align: center;
     padding: 20px;
@@ -215,27 +352,28 @@ p::first-line {
 }
 
 .box:hover {
-    background-color: rgb(236, 205, 151);;
+    background-color: rgb(236, 205, 151);
+    ;
     transform: scale(1.05);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Typography */
-@media (min-width: 1200px){
-    .container1{
-        grid-template-columns: repeat(5,1fr);
+@media (min-width: 1200px) {
+    .container1 {
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
-@media (min-width: 991px) and (max-width: 1200px){
-    .container1{
-        grid-template-columns: repeat(4,1fr);
+@media (min-width: 991px) and (max-width: 1200px) {
+    .container1 {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px){
-    .container1{
-        grid-template-columns: repeat(3,1fr);
+@media (min-width: 768px) and (max-width: 991px) {
+    .container1 {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -245,8 +383,9 @@ p::first-line {
         font-size: 14px;
         padding: 16px;
     }
-    .container1{
-        grid-template-columns: repeat(2,1fr);
+
+    .container1 {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -258,12 +397,12 @@ p::first-line {
 }
 
 
-.holder{
+.holder {
     text-align: center;
     /* background-color: rgb(66, 57, 57); */
     border-radius: 5px;
     border: none;
-    background: linear-gradient(90deg,rgb(71, 67, 67),rgb(230, 230, 134),rgb(248, 182, 59));
+    background: linear-gradient(90deg, rgb(71, 67, 67), rgb(230, 230, 134), rgb(248, 182, 59));
     transition: box-showdow 0.3s ease-in-out;
     color: rgb(14, 13, 13);
 
@@ -271,23 +410,24 @@ p::first-line {
 
 
 /* media for section 9 */
-@media (max-width: 700px){
-    .gy-4{
+@media (max-width: 700px) {
+    .gy-4 {
         padding-left: 5%;
         padding-right: 5%;
     }
 }
+
 /* section 9 media ends  */
 
 /* media for section 8 heading font change for small screen*/
-@media (max-width:500px){
-    .font6{
+@media (max-width:500px) {
+    .font6 {
         font-size: 80%;
     }
 }
 
-@media (max-width:991px){
-    .list1{
+@media (max-width:991px) {
+    .list1 {
         margin-left: -45px;
     }
 }
